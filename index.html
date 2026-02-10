@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Link Center</title>
+  <link rel="icon" type="image/x-icon" href="./add-40-min.png">
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --c-glass: #bbbbbc;
+      --c-light: #fff;
+      --c-dark: #000;
+      --c-action: #4d9eff;
+      --border-radius: 18px;
+      --saturation: 150%;
+      --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    body {
+        text-decoration: none;
+      font-family: "DM Sans", sans-serif;
+      background: #121212 url("DARK-BP.jpg") repeat;
+      background-size: 100px 100px;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    body.light-theme {
+      background: #f0f0f0 url("LIGHT-BP.jpg") repeat;
+      background-size: 50px 50px;
+      color: #224;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .glass-card {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(30px) saturate(180%);
+      border-radius: var(--border-radius);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 22px;
+      overflow: hidden;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p {
+      opacity: 0.8;
+      text-align: center;
+    }
+
+    .buttons {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .button {
+      background: rgba(255,255,255,0.15);
+      padding: 16px 20px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: var(--transition);
+    }
+
+    .button:hover {
+      transform: translateY(-2px) scale(1.02);
+      background: rgba(255,255,255,0.25);
+    }
+
+    .button.full-width {
+      grid-column: span 2;
+    }
+
+    .button-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    .button-tag {
+      margin-left: auto;
+      background: var(--c-action);
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .maker {
+      margin-top: 20px;
+      text-align: center;
+      opacity: 0.7;
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+
+    @media (max-width: 500px) {
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+      .button.full-width {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+
+<body class="dark-theme">
+  <div class="container">
+    <div class="glass-card">
+
+      
+
+      <div class="content">
+        <h1 id="title">Link Center</h1>
+        <p id="subtitle">All my links in one place</p>
+        <div id="status"></div>
+      </div>
+
+      <div class="buttons" id="buttons-container"></div>
+    </div>
+
+    <div class="maker">
+      Made by <a href="https://t.me/AmousaviNezhod" target="_blank">AMIR</a>
+    </div>
+  </div>
+
+<script>
+/**********************
+ * CONFIG
+ **********************/
+const EXTERNAL_TXT_URL = 'links.txt';
+const REPLACE_LOCAL_LINKS = true;
+
+const SITE = {
+  title: "Link Center",
+  subtitle: "All my links in one place"
+};
+
+const LINKS = [
+  { label: "Telegram", href: "https://t.me/AmousaviNezhod", icon: "paper-telegram", tag: "message" },
+  { label: "GitHub", href: "https://github.com/AmousaviNezhod", icon: "github", tag: "see my develops" },
+  
+];
+
+const ICONS = {
+  globe: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z",
+  github: "M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4",
+  "paper-plane": "M2 21L23 12L2 3v7l15 2-15 2z"
+};
+
+/**********************
+ * HELPERS
+ **********************/
+function clearButtons() {
+  const c = document.getElementById("buttons-container");
+  c.innerHTML = "";
+}
+
+function createButton({ label, href, icon, tag }) {
+  const a = document.createElement("a");
+  a.href = href;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  a.className = "button";
+
+  a.innerHTML = `
+    <div class="button-icon">
+      <svg viewBox="0 0 24 24">
+        <path d="${ICONS[icon] || ICONS.globe}"></path>
+      </svg>
+    </div>
+    <div>${label}</div>
+    ${tag ? `<div class="button-tag">${tag}</div>` : ""}
+  `;
+  return a;
+}
+
+function renderButtons(list) {
+  const c = document.getElementById("buttons-container");
+  clearButtons();
+
+  list.forEach(l => c.appendChild(createButton(l)));
+
+  if (list.length % 2 === 1 && list.length > 1) {
+    c.lastElementChild.classList.add("full-width");
+  }
+}
+
+/**********************
+ * INIT
+ **********************/
+document.getElementById("title").textContent = SITE.title;
+document.getElementById("subtitle").textContent = SITE.subtitle;
+
+fetch(EXTERNAL_TXT_URL)
+  .then(r => r.ok ? r.text() : Promise.reject())
+  .then(txt => {
+    const parsed = txt
+      .split("\n")
+      .map(l => l.trim())
+      .filter(Boolean)
+      .map(line => {
+        const [label, href] = line.split("|");
+        return { label, href, icon: "globe" };
+      });
+
+    renderButtons(REPLACE_LOCAL_LINKS ? parsed : LINKS.concat(parsed));
+  })
+  .catch(() => {
+    renderButtons(LINKS);
+  });
+</script>
+</body>
+</html>
