@@ -1,258 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Link Center</title>
-  <link rel="icon" type="image/x-icon" href="./add-40-min.png">
-
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap");
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --c-glass: #bbbbbc;
-      --c-light: #fff;
-      --c-dark: #000;
-      --c-action: #4d9eff;
-      --border-radius: 18px;
-      --saturation: 150%;
-      --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-
-    body {
-        text-decoration: none;
-      font-family: "DM Sans", sans-serif;
-      background: #121212 url("DARK-BP.jpg") repeat;
-      background-size: 100px 100px;
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      transition: background 0.4s ease, color 0.4s ease;
-    }
-
-    body.light-theme {
-      background: #f0f0f0 url("LIGHT-BP.jpg") repeat;
-      background-size: 50px 50px;
-      color: #224;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 800px;
-    }
-
-    .glass-card {
-      background: rgba(255,255,255,0.12);
-      backdrop-filter: blur(30px) saturate(180%);
-      border-radius: var(--border-radius);
-      padding: 32px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
-    }
-
-    .logo {
-      width: 80px;
-      height: 80px;
-      border-radius: 22px;
-      overflow: hidden;
-    }
-
-    .logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      text-align: center;
-    }
-
-    p {
-      opacity: 0.8;
-      text-align: center;
-    }
-
-    .buttons {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-
-    .button {
-      background: rgba(255,255,255,0.15);
-      padding: 16px 20px;
-      border-radius: 14px;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      transition: var(--transition);
-    }
-
-    .button:hover {
-      transform: translateY(-2px) scale(1.02);
-      background: rgba(255,255,255,0.25);
-    }
-
-    .button.full-width {
-      grid-column: span 2;
-    }
-
-    .button-icon svg {
-      width: 24px;
-      height: 24px;
-      fill: currentColor;
-    }
-
-    .button-tag {
-      margin-left: auto;
-      background: var(--c-action);
-      color: #fff;
-      font-size: 0.7rem;
-      padding: 4px 8px;
-      border-radius: 6px;
-      font-weight: 600;
-    }
-
-    .maker {
-      margin-top: 20px;
-      text-align: center;
-      opacity: 0.7;
-      font-size: 0.85rem;
-      text-decoration: none;
-    }
-
-    @media (max-width: 500px) {
-      .buttons {
-        grid-template-columns: 1fr;
-      }
-      .button.full-width {
-        grid-column: span 1;
-      }
-    }
-  </style>
-</head>
-
-<body class="dark-theme">
-  <div class="container">
-    <div class="glass-card">
-
-      
-
-      <div class="content">
-        <h1 id="title">Link Center</h1>
-        <p id="subtitle">All my links in one place</p>
-        <div id="status"></div>
-      </div>
-
-      <div class="buttons" id="buttons-container"></div>
-    </div>
-
-    <div class="maker">
-      Made by <a href="https://t.me/AmousaviNezhod" target="_blank">AMIR</a>
-    </div>
-  </div>
-
-<script>
-/**********************
- * CONFIG
- **********************/
-const EXTERNAL_TXT_URL = 'links.txt';
-const REPLACE_LOCAL_LINKS = true;
-
-const SITE = {
-  title: "Link Center",
-  subtitle: "All my links in one place"
-};
-
-const LINKS = [
-  { label: "Telegram", href: "https://t.me/AmousaviNezhod", icon: "paper-telegram", tag: "message" },
-  { label: "GitHub", href: "https://github.com/AmousaviNezhod", icon: "github", tag: "see my develops" },
+<!-- saved from url=(0042)https://folio-gamma-three.vercel.app/#work -->
+<html lang="en" class="motion-ready" data-ready="true" data-github-state="fallback"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
-];
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080909">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Independent projects at the intersection of code, sound, and creativity. Spatial audio experiments, music tools, and thoughtful web applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AM!R — Code. Sound. Something else.">
+  <meta property="og:description" content="A small corner of the internet for creative experiments and useful things.">
+  <title>AM!R — Code. Sound. Something else.</title>
+  <link rel="icon" href="https://folio-gamma-three.vercel.app/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./AM!R — Code. Sound. Something else._files/css2" rel="stylesheet">
+  <link rel="preload" as="image" href="./AM!R — Code. Sound. Something else._files/orbit.webp" fetchpriority="high">
+  <link rel="stylesheet" href="./AM!R — Code. Sound. Something else._files/style.css">
+  <script defer="" src="./AM!R — Code. Sound. Something else._files/config.js.download"></script>
+  <script defer="" src="./AM!R — Code. Sound. Something else._files/app.js.download"></script>
+</head>
+<body>
+  <a class="skip-link" href="https://folio-gamma-three.vercel.app/#main">Skip to content</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"></path></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"></path></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.3-4.3-2.5-6-3m12 6v-3.9c0-1.1-.4-1.8-.8-2.3 2.7-.3 5.6-1.3 5.6-6A4.7 4.7 0 0 0 18.5 6a4.3 4.3 0 0 0-.1-3.7S17.4 2 14.5 3.7a13.5 13.5 0 0 0-7 0C4.6 2 3.6 2.3 3.6 2.3A4.3 4.3 0 0 0 3.5 6a4.7 4.7 0 0 0-1.3 3.8c0 4.7 2.9 5.7 5.6 6-.4.5-.8 1.3-.8 2.3V22"></path></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4L22 2ZM22 2 11 13"></path></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"></path></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"></path></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+    <symbol id="i-motion" viewBox="0 0 24 24"><path d="M4 7h9M2 12h5m-3 5h9"></path><circle cx="16" cy="12" r="5"></circle></symbol>
+  </svg>
 
-const ICONS = {
-  globe: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z",
-  github: "M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4",
-  "paper-plane": "M2 21L23 12L2 3v7l15 2-15 2z"
-};
-
-/**********************
- * HELPERS
- **********************/
-function clearButtons() {
-  const c = document.getElementById("buttons-container");
-  c.innerHTML = "";
-}
-
-function createButton({ label, href, icon, tag }) {
-  const a = document.createElement("a");
-  a.href = href;
-  a.target = "_blank";
-  a.rel = "noopener noreferrer";
-  a.className = "button";
-
-  a.innerHTML = `
-    <div class="button-icon">
-      <svg viewBox="0 0 24 24">
-        <path d="${ICONS[icon] || ICONS.globe}"></path>
-      </svg>
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="https://folio-gamma-three.vercel.app/#" aria-label="AM!R — back to top"><span class="brand-mark" aria-hidden="true">a<span><svg class="icon"><use href="#i-arrow"></use></svg></span></span><span data-name="">AM!R</span><span class="brand-divider"></span><span class="brand-caption">A WORK IN PROGRESS</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="https://folio-gamma-three.vercel.app/#work" aria-current="location">Selected work</a>
+        <a class="nav-link" href="https://folio-gamma-three.vercel.app/#about">About</a>
+        <a class="nav-link" href="https://folio-gamma-three.vercel.app/#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-github" data-social="github" aria-label="View GitHub profile" target="_blank" rel="noopener noreferrer" href="https://github.com/AmousaviNezhod"><svg class="icon"><use href="#i-github"></use></svg></a>
+        <a class="header-contact" data-social="telegram" target="_blank" rel="noopener noreferrer" href="https://t.me/AmousaviNezhod">Let’s talk <svg class="icon"><use href="#i-arrow"></use></svg></a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-haspopup="dialog" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+      </div>
     </div>
-    <div>${label}</div>
-    ${tag ? `<div class="button-tag">${tag}</div>` : ""}
-  `;
-  return a;
-}
+  </header>
 
-function renderButtons(list) {
-  const c = document.getElementById("buttons-container");
-  clearButtons();
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"><img src="./AM!R — Code. Sound. Something else._files/orbit.webp" alt="" width="1536" height="1024" fetchpriority="high"><div class="art-caption"><span class="tiny-cross">+</span><span>EXPERIMENTS IN FORM &amp; FREQUENCY</span><span class="tiny-cross">+</span></div></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-enter"><span class="status-dot"></span><span id="hero-eyebrow">Developer. Creative thinker. Constant tinkerer.</span></p>
+        <h1 id="hero-title" class="hero-enter">Code. Sound.<br><span>Something else.</span></h1>
+        <p class="hero-description hero-enter" id="hero-description">I build things at the intersection of code and creativity. Sound experiments, thoughtful tools, and ideas that needed to exist.</p>
+        <div class="hero-buttons hero-enter">
+          <a class="button button-primary" data-social="github" target="_blank" rel="noopener noreferrer" href="https://github.com/AmousaviNezhod"><svg class="icon"><use href="#i-github"></use></svg>Explore my GitHub<svg class="icon button-arrow"><use href="#i-arrow"></use></svg></a>
+          <a class="button button-secondary" data-social="telegram" target="_blank" rel="noopener noreferrer" href="https://t.me/AmousaviNezhod"><svg class="icon"><use href="#i-send"></use></svg>Say hello<svg class="icon button-arrow"><use href="#i-arrow"></use></svg></a>
+        </div>
+        <p class="hero-footnote hero-enter">A little curiosity. A lot of building.</p>
+      </div>
+      <div class="hero-bottom"><a href="https://folio-gamma-three.vercel.app/#work" class="explore-link"><span class="scroll-indicator"><svg class="icon"><use href="#i-down"></use></svg></span>SCROLL TO EXPLORE</a><span class="hero-coordinate">INDEPENDENT MIND. OPEN SOURCE.</span></div>
+    </section>
 
-  list.forEach(l => c.appendChild(createButton(l)));
+    <section class="work section container" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal is-visible"><div><p class="eyebrow section-eyebrow"><span class="section-number">01 /</span> SELECTED WORK</p><h2 id="work-title">Ideas, made real<span class="muted">.</span></h2></div><p class="section-aside">A few things I’ve put my curiosity into.<br>Built to be used, not just looked at.</p></div>
+      <div class="project-grid" id="featured-projects" aria-busy="false"><article class="project-card reveal is-visible"><div class="project-visual spatial-visual" aria-hidden="true"><div class="visual-topline"><span>BINAURALER / SPATIAL AUDIO</span><span class="visual-dot"></span></div><div class="spatial-axis"><span>L</span><span>R</span></div><div class="spatial-sphere"></div><div class="spatial-bottom">SOUND, IN ANOTHER DIMENSION.</div></div><div class="project-body"><span class="project-number">01 / An experiment in spatial sound</span><div class="project-title-row"><h3>binauraler</h3><button class="project-open" data-project="binarauraler" aria-label="Explore binauraler" aria-haspopup="dialog"><svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></button></div><p class="project-description">Give sound a little room to move. A browser-based playground for turning audio into an immersive, three-dimensional experience.</p><div class="project-meta"><div class="project-tags"><span class="project-tag">JavaScript</span><span class="project-tag">Web Audio API</span><span class="project-tag">HTML / CSS</span></div><a class="project-source" href="https://github.com/AmousaviNezhod/binarauraler" target="_blank" rel="noopener noreferrer" aria-label="binauraler source on GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></a></div></div></article><article class="project-card reveal is-visible"><div class="project-visual waveform-visual" aria-hidden="true"><div class="visual-topline"><span>SONICDRAFT / MUSIC &amp; IDEAS</span><span class="visual-dot"></span></div><div class="waveform-stage"><div class="waveform-wordmark">Sonic<span>Draft</span></div><div class="waveform"><i style="--bar:5.0px"></i><i style="--bar:7.4px"></i><i style="--bar:6.3px"></i><i style="--bar:8.1px"></i><i style="--bar:5.6px"></i><i style="--bar:7.4px"></i><i style="--bar:13.1px"></i><i style="--bar:10.9px"></i><i style="--bar:25.0px"></i><i style="--bar:6.1px"></i><i style="--bar:26.6px"></i><i style="--bar:9.8px"></i><i style="--bar:12.3px"></i><i style="--bar:6.9px"></i><i style="--bar:16.0px"></i><i style="--bar:27.6px"></i><i style="--bar:20.3px"></i><i style="--bar:44.6px"></i><i style="--bar:8.8px"></i><i style="--bar:37.7px"></i><i style="--bar:9.9px"></i><i style="--bar:8.7px"></i><i style="--bar:12.7px"></i><i style="--bar:27.8px"></i><i style="--bar:40.6px"></i><i style="--bar:29.5px"></i><i style="--bar:56.1px"></i><i style="--bar:11.8px"></i><i style="--bar:38.7px"></i><i style="--bar:7.9px"></i><i style="--bar:10.7px"></i><i style="--bar:18.7px"></i><i style="--bar:38.8px"></i><i style="--bar:47.8px"></i><i style="--bar:35.3px"></i><i style="--bar:57.0px"></i><i style="--bar:13.3px"></i><i style="--bar:30.9px"></i><i style="--bar:5.7px"></i><i style="--bar:21.3px"></i><i style="--bar:21.9px"></i><i style="--bar:44.7px"></i><i style="--bar:46.6px"></i><i style="--bar:35.4px"></i><i style="--bar:48.1px"></i><i style="--bar:12.7px"></i><i style="--bar:18.7px"></i><i style="--bar:5.6px"></i><i style="--bar:27.8px"></i><i style="--bar:20.8px"></i><i style="--bar:42.1px"></i><i style="--bar:37.5px"></i><i style="--bar:29.2px"></i><i style="--bar:32.9px"></i><i style="--bar:10.0px"></i><i style="--bar:7.7px"></i><i style="--bar:5.6px"></i><i style="--bar:26.1px"></i><i style="--bar:15.7px"></i><i style="--bar:30.4px"></i><i style="--bar:23.3px"></i><i style="--bar:18.4px"></i><i style="--bar:16.9px"></i><i style="--bar:6.7px"></i><i style="--bar:7.1px"></i><i style="--bar:5.0px"></i><i style="--bar:14.8px"></i><i style="--bar:8.3px"></i><i style="--bar:11.9px"></i><i style="--bar:8.1px"></i><i style="--bar:6.3px"></i><i style="--bar:5.0px"></i></div><div class="waveform-subtitle">CRAFT THE SOUND. SHAPE THE STORY.</div></div></div><div class="project-body"><span class="project-number">02 / A workspace for musical ideas</span><div class="project-title-row"><h3>SonicDraft</h3><button class="project-open" data-project="SonicDraft" aria-label="Explore SonicDraft" aria-haspopup="dialog"><svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></button></div><p class="project-description">From a feeling to a fully formed music prompt. Shape the sound before the first note exists.</p><div class="project-meta"><div class="project-tags"><span class="project-tag">JavaScript</span><span class="project-tag">Tailwind CSS</span><span class="project-tag">HTML</span></div><a class="project-source" href="https://github.com/AmousaviNezhod/SonicDraft" target="_blank" rel="noopener noreferrer" aria-label="SonicDraft source on GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></a></div></div></article><article class="project-card reveal wide is-visible"><div class="project-visual schedule-visual" aria-hidden="true"><div class="visual-topline"><span>UNISEL / INTERFACE STUDY</span><span class="visual-dot"></span></div><div class="schedule-window"><div class="schedule-toolbar">UniSel<span>A LITTLE LESS CHAOS.</span></div><div class="schedule-grid"><span class="schedule-day">SAT</span><span class="schedule-day">SUN</span><span class="schedule-day">MON</span><span class="schedule-day">TUE</span><span class="schedule-day">WED</span><i class="schedule-block b1"></i><i class="schedule-block b2"></i><i class="schedule-block b3"></i><i class="schedule-block b4"></i><i class="schedule-block b5"></i></div></div></div><div class="project-body"><span class="project-number">03 / A little order in the semester</span><div class="project-title-row"><h3>UniSel</h3><button class="project-open" data-project="Unit-selection" aria-label="Explore UniSel" aria-haspopup="dialog"><svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></button></div><p class="project-description">Course selection, minus the chaos. A considered way to plan, compare, and find a timetable that works.</p><div class="project-meta"><div class="project-tags"><span class="project-tag">JavaScript</span><span class="project-tag">HTML / CSS</span><span class="project-tag">GSAP</span></div><a class="project-source" href="https://github.com/AmousaviNezhod/Unit-selection" target="_blank" rel="noopener noreferrer" aria-label="UniSel source on GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></a></div></div></article></div>
+      <div class="work-caption"><span>CREATIVE EXPERIMENTS &amp; EVERYDAY TOOLS</span><span>THOUGHTFULLY SELECTED. ALWAYS EVOLVING.</span></div>
+    </section>
 
-  if (list.length % 2 === 1 && list.length > 1) {
-    c.lastElementChild.classList.add("full-width");
-  }
-}
+    <section class="about section container" id="about" aria-labelledby="about-title">
+      <div class="about-copy reveal is-visible"><p class="eyebrow section-eyebrow"><span class="section-number">02 /</span> THE PERSON BEHIND THE PROJECTS</p><h2 id="about-title">A builder,<br>not a single box.</h2><div id="about-paragraphs"><p>Some ideas start with a sound. Others start with a small, everyday frustration. I like turning both into something you can actually use.</p><p>My projects move between spatial audio, music, post-production, and the practical side of the web. Different mediums. The same curiosity.</p></div><p class="about-note" id="about-note">Less talk. More making.</p></div>
+      <div class="toolkit reveal is-visible"><div class="toolkit-heading"><svg class="icon"><use href="#i-code"></use></svg><span>THE TOOLS CHANGE. THE CURIOSITY DOESN’T.</span></div><div id="technology-groups"><div class="technology-group"><h3 class="technology-label">The foundations</h3><div class="technology-values"><span>JavaScript</span><span>TypeScript</span><span>Python</span><span>HTML &amp; CSS</span></div></div><div class="technology-group"><h3 class="technology-label">Sound &amp; moving image</h3><div class="technology-values"><span>Web Audio API</span><span>Adobe CEP</span><span>FFmpeg</span></div></div><div class="technology-group"><h3 class="technology-label">Interface &amp; interaction</h3><div class="technology-values"><span>Tailwind CSS</span><span>GSAP</span><span>Tkinter</span></div></div></div><p class="toolkit-note">Drawn from the code. Not a list of buzzwords.<span aria-hidden="true">↗</span></p></div>
+    </section>
 
-/**********************
- * INIT
- **********************/
-document.getElementById("title").textContent = SITE.title;
-document.getElementById("subtitle").textContent = SITE.subtitle;
+    <section class="archive section container" id="archive" aria-labelledby="archive-title">
+      <div class="section-heading reveal is-visible"><div><p class="eyebrow section-eyebrow"><span class="section-number">03 /</span> ELSEWHERE IN THE REPOS</p><h2 id="archive-title">More from the workbench<span class="muted">.</span></h2></div><a class="text-link" data-social="github" target="_blank" rel="noopener noreferrer" href="https://github.com/AmousaviNezhod">All repositories<svg class="icon"><use href="#i-arrow"></use></svg></a></div>
+      <div id="other-projects" class="repo-list" aria-busy="false"><a class="repo-row" href="https://github.com/AmousaviNezhod/AudioSyncPro" target="_blank" rel="noopener noreferrer" aria-label="AudioSyncPro — view repository on GitHub"><span class="repo-index">01</span><h3 class="repo-name">AudioSyncPro</h3><p class="repo-description">Automatic audio synchronization and normalization for Premiere Pro.</p><span class="repo-language">Python</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a><a class="repo-row" href="https://github.com/AmousaviNezhod/Pr-liner" target="_blank" rel="noopener noreferrer" aria-label="Pr-liner — view repository on GitHub"><span class="repo-index">02</span><h3 class="repo-name">Pr-liner</h3><p class="repo-description">A Premiere Pro extension for organizing Zoom F8 field recordings.</p><span class="repo-language">JavaScript</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a><a class="repo-row" href="https://github.com/AmousaviNezhod/audioSorter-for-Zoom-F8-Recorder-" target="_blank" rel="noopener noreferrer" aria-label="AudioSorter — view repository on GitHub"><span class="repo-index">03</span><h3 class="repo-name">AudioSorter</h3><p class="repo-description">A small desktop tool that groups field recordings by microphone.</p><span class="repo-language">Python</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a><a class="repo-row" href="https://github.com/AmousaviNezhod/MultiCam-Sony" target="_blank" rel="noopener noreferrer" aria-label="MultiCam-Sony — view repository on GitHub"><span class="repo-index">04</span><h3 class="repo-name">MultiCam-Sony</h3><p class="repo-description">A TypeScript project with mobile and bridge components.</p><span class="repo-language">TypeScript</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a></div>
+      <div class="github-note"><span class="status-dot small"></span><span id="github-status" role="status">GitHub is taking a moment · You’re viewing the curated collection.</span><span class="github-note-right">PUBLIC CODE. REAL PROJECTS.</span></div>
+    </section>
 
-fetch(EXTERNAL_TXT_URL)
-  .then(r => r.ok ? r.text() : Promise.reject())
-  .then(txt => {
-    const parsed = txt
-      .split("\n")
-      .map(l => l.trim())
-      .filter(Boolean)
-      .map(line => {
-        const [label, href] = line.split("|");
-        return { label, href, icon: "globe" };
-      });
+    <section class="contact section container" id="contact" aria-labelledby="contact-title">
+      <div class="contact-top reveal"><p class="eyebrow section-eyebrow"><span class="section-number">04 /</span> THE NEXT GOOD IDEA</p><span class="contact-spark" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="5"><path d="M24 2v44M2 24h44M8.4 8.4l31.2 31.2M8.4 39.6 39.6 8.4"></path></svg></span></div>
+      <div class="contact-main reveal"><h2 id="contact-title">Have something<br>in mind?</h2><div class="contact-description"><p id="contact-description">An idea, an experiment, or just a good conversation. My inbox is open.</p><a class="button button-primary" data-social="telegram" target="_blank" rel="noopener noreferrer" href="https://t.me/AmousaviNezhod"><svg class="icon"><use href="#i-send"></use></svg>Let’s talk on Telegram<svg class="icon button-arrow"><use href="#i-arrow"></use></svg></a><a class="text-link contact-github" data-social="github" target="_blank" rel="noopener noreferrer" href="https://github.com/AmousaviNezhod">Or take a look at the code<svg class="icon"><use href="#i-arrow"></use></svg></a></div></div>
+      <div class="contact-signoff"><span>MADE WITH INTENTION. SHARED WITH YOU.</span><span class="signoff-line"></span><span data-name="">AM!R</span></div>
+    </section>
+  </main>
 
-    renderButtons(REPLACE_LOCAL_LINKS ? parsed : LINKS.concat(parsed));
-  })
-  .catch(() => {
-    renderButtons(LINKS);
-  });
-</script>
-</body>
-</html>
+  <footer class="site-footer container"><span>© <span id="year">2026</span> <span data-name="">AM!R</span><span class="footer-separator">/</span>Built from curiosity.</span><div class="footer-actions"><button id="motion-toggle" class="motion-toggle" aria-pressed="false" title="Toggle reduced motion"><svg class="icon"><use href="#i-motion"></use></svg><span>Reduce motion</span></button><a href="https://folio-gamma-three.vercel.app/#" class="back-top">Back to top<svg class="icon"><use href="#i-arrow"></use></svg></a></div></footer>
+
+  <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-summary"><button class="dialog-close" id="dialog-close" aria-label="Close project details" autofocus=""><svg class="icon"><use href="#i-close"></use></svg></button><div id="project-dialog-content"></div></dialog>
+  <dialog id="mobile-menu" class="mobile-menu" aria-label="Navigation"><div class="mobile-menu-top"><span data-name="">AM!R</span><button class="icon-button" id="menu-close" aria-label="Close navigation" autofocus=""><svg class="icon"><use href="#i-close"></use></svg></button></div><nav aria-label="Mobile navigation"><a href="https://folio-gamma-three.vercel.app/#work"><span>01</span>Selected work<svg class="icon"><use href="#i-arrow"></use></svg></a><a href="https://folio-gamma-three.vercel.app/#about"><span>02</span>About<svg class="icon"><use href="#i-arrow"></use></svg></a><a href="https://folio-gamma-three.vercel.app/#contact"><span>03</span>Contact<svg class="icon"><use href="#i-arrow"></use></svg></a></nav><div class="mobile-socials"><a class="button button-primary" data-social="github" target="_blank" rel="noopener noreferrer" href="https://github.com/AmousaviNezhod">GitHub<svg class="icon"><use href="#i-arrow"></use></svg></a><a class="button button-secondary" data-social="telegram" target="_blank" rel="noopener noreferrer" href="https://t.me/AmousaviNezhod">Telegram<svg class="icon"><use href="#i-send"></use></svg></a></div></dialog>
+  <noscript><div class="noscript-message">JavaScript brings in the project collection and contact links. Please enable it to explore this portfolio.</div></noscript>
+
+
+</body></html>
