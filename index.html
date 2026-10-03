@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AM!R - Creative Developer</title>
+  <meta name="description" content="Portfolio of AM!R, a creative developer building tools at the intersection of code, sound, and image." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AM!R - Creative Developer" />
+  <meta property="og:description" content="Tools at the intersection of code, sound, and image. Selected projects, stack, and contact." />
+  <meta property="og:image" content="https://github.com/AmousaviNezhod.png?size=1200" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AM!R - Creative Developer" />
+  <meta name="twitter:description" content="Tools at the intersection of code, sound, and image. Selected projects, stack, and contact." />
+  <meta name="twitter:image" content="https://github.com/AmousaviNezhod.png?size=1200" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://opengraph.github.com" />
+  <link rel="preconnect" href="https://cdn.simpleicons.org" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="top-sentinel" id="topSentinel" aria-hidden="true"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Cursor light -->
+  <div class="cursor-light" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" data-scroll>AM!R</a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link" data-scroll>About</a>
+        <a href="#projects" class="nav-link" data-scroll>Projects</a>
+        <a href="#stack" class="nav-link" data-scroll>Stack</a>
+        <a href="#contact" class="nav-link" data-scroll>Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="https://github.com/AmousaviNezhod" target="_blank" rel="noopener" class="nav-icon-btn" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://t.me/AmousaviNezhod" target="_blank" rel="noopener" class="nav-icon-btn" aria-label="Telegram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </a>
+        <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <a href="#about" class="mobile-link" data-scroll>About</a>
+      <a href="#projects" class="mobile-link" data-scroll>Projects</a>
+      <a href="#stack" class="mobile-link" data-scroll>Stack</a>
+      <a href="#contact" class="mobile-link" data-scroll>Contact</a>
+      <div class="mobile-social">
+        <a href="https://github.com/AmousaviNezhod" target="_blank" rel="noopener" class="mobile-social-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://t.me/AmousaviNezhod" target="_blank" rel="noopener" class="mobile-social-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          Telegram
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-photo"></div>
+        <div class="hero-veil"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-identity reveal" style="--d:0.1s">
+            <img
+              class="hero-avatar"
+              src="https://avatars.githubusercontent.com/AmousaviNezhod?v=4&amp;size=160"
+              onerror="this.onerror=null;this.src='https://github.com/AmousaviNezhod.png?size=160'"
+              alt="Portrait of AM!R"
+              width="64"
+              height="64"
+            />
+            <p class="hero-eyebrow" id="heroEyebrow">Creative Developer, est. 2024</p>
+          </div>
+          <h1 class="hero-title reveal" style="--d:0.25s" id="heroTitle">AM!R</h1>
+          <p class="hero-desc reveal" style="--d:0.4s" id="heroDesc">
+            I build tools at the intersection of code, sound, and image.<br />
+            Practical things with a strong point of view.
+          </p>
+          <div class="hero-actions reveal" style="--d:0.55s">
+            <a href="#projects" class="btn btn-primary" data-scroll>
+              View my work
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="4" x2="12" y2="20"/><polyline points="18 14 12 20 6 14"/></svg>
+            </a>
+            <a href="https://t.me/AmousaviNezhod" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              Get in touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title reveal" id="aboutHeading">Developer. Editor. Builder.</h2>
+        <div class="about-body">
+          <p class="about-text reveal" style="--d:0.1s" id="aboutBody1">
+            My work lives where technology meets creative practice. From university course schedulers to music prompt composers, I build tools that solve real problems while maintaining a strong visual and functional identity.
+          </p>
+          <p class="about-text reveal" style="--d:0.2s" id="aboutBody2">
+            Every project is an opportunity to craft something that feels intentional, considered, and genuinely useful.
+          </p>
+        </div>
+        <div class="about-stats reveal" style="--d:0.3s" id="aboutStats">
+          <div class="stat">
+            <span class="stat-value" id="statRepos">-</span>
+            <span class="stat-label">Public repos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="statStars">-</span>
+            <span class="stat-label">Total stars</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="statFollowers">-</span>
+            <span class="stat-label">Followers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">Featured projects</h2>
+        <p class="section-subtitle reveal" style="--d:0.1s">A curated selection from my GitHub: tools and experiments worth a closer look.</p>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section class="section stack" id="stack">
+      <div class="container">
+        <h2 class="section-title reveal">Technologies</h2>
+        <p class="section-subtitle reveal" style="--d:0.1s">Recurring tools and languages across my work.</p>
+        <div class="stack-grid" id="stackGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Work -->
+    <section class="section other-work" id="otherWork">
+      <div class="container">
+        <h2 class="section-title reveal">Other work</h2>
+        <p class="section-subtitle reveal" style="--d:0.1s">Additional repositories: experiments, utilities, and explorations.</p>
+        <div class="other-grid" id="otherGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="contact-bg" aria-hidden="true">
+        <div class="contact-glow"></div>
+      </div>
+      <div class="container">
+        <div class="contact-content">
+          <p class="contact-eyebrow reveal">Contact</p>
+          <h2 class="contact-title reveal" style="--d:0.1s" id="contactTitle">Let's build something interesting.</h2>
+          <p class="contact-sub reveal" style="--d:0.2s" id="contactSub">
+            Whether it's a creative tool, a web app, or an experiment worth exploring, my inbox is always open.
+          </p>
+          <div class="contact-actions reveal" style="--d:0.3s">
+            <a href="https://github.com/AmousaviNezhod" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://t.me/AmousaviNezhod" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              Telegram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">AM!R</span>
+      <p class="footer-note">© <span id="footerYear">2026</span> · Hand-built with HTML, CSS and JavaScript</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/AmousaviNezhod" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://t.me/AmousaviNezhod" target="_blank" rel="noopener">Telegram</a>
+        <a href="#hero" data-scroll>Back to top</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel" id="modalPanel">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-content" id="modalContent">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

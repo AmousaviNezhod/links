@@ -1,0 +1,7 @@
+.claude/
+.claude
+.opencode/
+node_modules/
+Thumbs.db
+.DS_Store
+*.log
